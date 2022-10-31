@@ -9,6 +9,8 @@ run:
 bash update.sh --download --convert --test
 ```
 
-output: 
+output:
 
 `emoji_test.lua`
+
+![GitHub file size in bytes](https://img.shields.io/github/size/LawssssCat/lua-emoji-map/emoji_test.lua?style=plastic)
