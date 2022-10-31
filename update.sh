@@ -8,7 +8,7 @@ fi
 UPDATE_ROOT="$(cd "$(dirname "$0")"; pwd)"
 
 unicode_emoji_url="https://www.unicode.org/Public/emoji/"
-unicode_emoji_version=11.0
+unicode_emoji_version=13.0
 files=(
   "emoji-test.txt"
 )
@@ -23,9 +23,9 @@ download_emoji_data() {
   cd "$dir_temp"
   for file in ${files[@]}
   do
-    if ! [[ -f "${file}" ]]; then
-      curl -LO "${unicode_emoji_url}/${unicode_emoji_version}/${file}"
-    fi
+    curl -LO "${unicode_emoji_url}/${unicode_emoji_version}/${file}"
+    # if ! [[ -f "${file}" ]]; then
+    # fi
   done
 }
 
